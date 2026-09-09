@@ -1,0 +1,53 @@
+settings:
+  debug: false
+  starter-pickaxe-on-first-join: true
+  prevent-prison-pickaxe-drop: true
+  prevent-prison-pickaxe-despawn: true
+  tokens-per-block: 1
+  autosave-seconds: 60
+  enabled-worlds: [] # Empty = all worlds
+
+pickaxe:
+  material: DIAMOND_PICKAXE
+  name: '<gradient:#00e5ff:#ff2da4><bold>Prison Pickaxe</bold></gradient>'
+  base-xp-per-block: 1.0
+  level-cap: 1000
+  xp-formula:
+    base: 100.0
+    exponent: 1.35
+  lore:
+    - '<dark_gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '<gray>Level: <aqua><level>'
+    - '<gray>XP: <aqua><xp>/<xp_required> <dark_gray>(<progress>%)'
+    - '<gray>Tokens: <light_purple><tokens>'
+    - ''
+    - '<white><bold>ENCHANTS'
+    - '<enchants>'
+    - '<dark_gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+
+messages:
+  prefix: '<dark_gray>[<gradient:#00e5ff:#ff2da4><bold>PrisonCore</bold></gradient><dark_gray>] '
+  no-permission: '<red>You do not have permission.'
+  players-only: '<red>This command can only be used by a player.'
+  invalid-pickaxe: '<red>Hold your PrisonCore pickaxe first.'
+  reload: '<green>PrisonCore configuration reloaded.'
+  level-up: '<green><bold>LEVEL UP!</bold> <gray>Your pickaxe reached level <aqua><level><gray>.'
+  insufficient-tokens: '<red>You need <amount> tokens for that upgrade.'
+  enchant-maxed: '<yellow>That enchant is already maxed.'
+  enchant-level-required: '<red>Your pickaxe must be level <level>.'
+  enchant-purchased: '<green>Upgraded <enchant> to level <level> for <cost> tokens.'
+  rename-credit-required: '<red>You need a Rename Scroll credit. Apply a Rename Scroll to the pickaxe first.'
+  lore-credit-required: '<red>You need a Lore Scroll credit. Apply a Lore Scroll to the pickaxe first.'
+
+rewards:
+  key-finder:
+    chance-per-level: 0.00025
+    max-procs-per-minute: 8
+    commands:
+      - 'excellentcrates key give <player> prison 1'
+    message: '<gradient:#00e5ff:#ff2da4><bold>KEY FINDER!</bold></gradient> <gray>You found a crate key.'
+  token-finder:
+    chance-per-level: 0.001
+    tokens-per-proc: 25
+    max-procs-per-minute: 20
+    message: '<light_purple><bold>TOKEN FINDER!</bold> <gray>+<amount> tokens.'

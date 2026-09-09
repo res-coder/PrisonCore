@@ -1,0 +1,31 @@
+name: PrisonCore
+version: '${project.version}'
+main: com.seandoyle.prisoncore.PrisonCorePlugin
+api-version: '1.21.10'
+author: Sean Doyle
+description: Advanced prison pickaxe progression, custom enchants, tokens, scrolls, rewards, and admin tooling.
+commands:
+  prisoncore:
+    description: PrisonCore administration.
+    aliases: [pcore, pc]
+    usage: /prisoncore help
+  pickaxe:
+    description: Open and manage your PrisonCore pickaxe.
+    usage: /pickaxe [rename|lore|repair]
+  tokens:
+    description: View your PrisonCore token balance.
+    aliases: [token]
+    usage: /tokens [player]
+permissions:
+  prisoncore.use:
+    default: true
+  prisoncore.admin:
+    default: op
+  prisoncore.admin.give:
+    default: op
+  prisoncore.admin.tokens:
+    default: op
+  prisoncore.admin.repair:
+    default: op
+  prisoncore.admin.reload:
+    default: op

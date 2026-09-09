@@ -1,0 +1,22 @@
+scrolls:
+  rename:
+    material: NAME_TAG
+    display: '<aqua><bold>Rename Scroll'
+    cost: 2500
+    lore:
+      - '<gray>Drag this scroll onto a PrisonCore pickaxe.'
+      - '<gray>Then use <white>/pickaxe rename &lt;name&gt;'
+  lore:
+    material: PAPER
+    display: '<yellow><bold>Lore Scroll'
+    cost: 3000
+    lore:
+      - '<gray>Drag this scroll onto a PrisonCore pickaxe.'
+      - '<gray>Then use <white>/pickaxe lore &lt;text&gt;'
+  transmog:
+    material: AMETHYST_SHARD
+    display: '<light_purple><bold>Transmog Scroll'
+    cost: 5000
+    lore:
+      - '<gray>Admin-created transmog scroll.'
+      - '<gray>Changes the pickaxe material without losing progression.'

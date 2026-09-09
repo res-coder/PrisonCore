@@ -1,0 +1,47 @@
+enchants:
+  efficiency:
+    display: '<aqua>Efficiency'
+    icon: GOLDEN_PICKAXE
+    max-level: 10
+    required-pickaxe-level: 1
+    base-cost: 150
+    cost-multiplier: 1.65
+    description:
+      - '<gray>Increases vanilla mining speed.'
+  fortune:
+    display: '<gold>Fortune'
+    icon: DIAMOND
+    max-level: 10
+    required-pickaxe-level: 5
+    base-cost: 300
+    cost-multiplier: 1.75
+    description:
+      - '<gray>Increases vanilla block drops.'
+  xp_hoarder:
+    display: '<green>XP Hoarder'
+    icon: EXPERIENCE_BOTTLE
+    max-level: 25
+    required-pickaxe-level: 15
+    base-cost: 500
+    cost-multiplier: 1.35
+    description:
+      - '<gray>Boosts PrisonCore pickaxe XP.'
+      - '<gray>+15% XP per enchant level.'
+  key_finder:
+    display: '<light_purple>Key Finder'
+    icon: TRIPWIRE_HOOK
+    max-level: 20
+    required-pickaxe-level: 20
+    base-cost: 1000
+    cost-multiplier: 1.45
+    description:
+      - '<gray>Chance to discover crate keys while mining.'
+  token_finder:
+    display: '<yellow>Token Finder'
+    icon: SUNFLOWER
+    max-level: 25
+    required-pickaxe-level: 10
+    base-cost: 400
+    cost-multiplier: 1.4
+    description:
+      - '<gray>Chance to find bonus PrisonCore tokens.'
